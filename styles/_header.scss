@@ -1,0 +1,35 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-image: url("../img/pilt1.webp");
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 10;
+    /* jaab teksti peale */
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 50px;
+    position: relative;
+    z-index: 2;
+    /* Ensure text appears above overlay */
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    /* must overlay pildile */
+    z-index: 1;
+}

@@ -35,7 +35,7 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  background-image: url("pilt1.webp");
+  background-image: url("../img/pilt1.webp");
   height: 300px;
   background-size: cover;
   background-position: center;
